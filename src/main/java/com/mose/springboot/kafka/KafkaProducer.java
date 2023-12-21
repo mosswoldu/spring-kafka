@@ -20,6 +20,6 @@ public class KafkaProducer {
     public void sendMessage(String message) {
         //LOGGER.info(String.format("#### -> Producing message -> %s", message));
         LOGGER.info(String.format("Message sent %s", message));
-        kafkaTemplate.send("mose-topic", message);
+        kafkaTemplate.send("mositi", message);
     }
 }
